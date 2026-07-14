@@ -1,0 +1,32 @@
+/* Amivi — Spacing, radius, elevation & motion tokens */
+:root {
+  /* Spacing scale — the codebase uses ad-hoc 4/6/8/10/12/14/16/20/24 values,
+     not a strict grid. This lists the real recurring values. */
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 10px;
+  --space-5: 12px;
+  --space-6: 14px;
+  --space-7: 16px;
+  --space-8: 20px;
+  --space-9: 24px;
+  --space-10: 32px;
+
+  /* Corner radii — glass surfaces run large (16–28px); flat cards use 16px */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+
+  /* Liquid-glass blur amounts (BackdropFilter sigma in the app) */
+  --blur-glass: 18px;
+  --blur-glass-strong: 24px;
+
+  /* Motion — the app uses short, calm eases; no bounce/spring */
+  --ease-standard: cubic-bezier(0.33, 1, 0.68, 1); /* @kind other */
+  --duration-fast: 150ms; /* @kind other */
+  --duration-standard: 260ms; /* @kind other */
+}

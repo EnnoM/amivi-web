@@ -1,0 +1,31 @@
+/* Amivi — Typography tokens
+   Font: Barlow (used app-wide via fontFamily: 'Barlow' in Flutter TextStyles).
+   Loaded from Google Fonts — this IS the real brand font, not a substitute. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-display: 'Barlow', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Barlow', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Type scale — taken from real sizes used across screens (14/15/16/17/18/20/22) */
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 22px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  /* AppBar-style titles are always letter-spaced ALL CAPS, e.g. "A M I V I" */
+  --tracking-title: 2px;
+  --tracking-label: 1.2px;
+  --line-height-body: 1.4;
+  --line-height-tight: 1.0;
+}

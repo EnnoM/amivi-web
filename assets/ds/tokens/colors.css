@@ -1,0 +1,52 @@
+/* Amivi — Color tokens
+   Base brand colors are lifted directly from the Flutter codebase
+   (lib/widgets/*, lib/screens/*) and the brand notes supplied by the client
+   (Dunkelgrau/Hellgrau/Hellgraulila/Grün/Rot/Petrol). */
+:root {
+  /* ---- Base palette ---- */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-dark-grey: #424B54;   /* Dunkelgrau — page/app background */
+  --color-grey: #6E7882;        /* Hellgrau — neutral / secondary UI */
+  --color-lavender: #8E8FAF;    /* Hellgraulila — secondary accent, headings */
+  --color-sage: #7D9A8D;        /* Grün — primary action / success */
+  --color-sage-light: #81B29A;  /* lighter sage seen on avatar fallbacks */
+  --color-wine: #8F4C59;        /* Rot — destructive / warning / badges */
+  --color-petrol: #3A6E7E;      /* Petrol — group card surface */
+
+  /* ---- Supporting neutrals found in the codebase ---- */
+  --color-greige: #ECEAE4;      /* warm light card bg (friend cards) */
+  --color-slate-dark: #363E45;  /* map-loading / deep surface */
+  --color-track-inactive: #4A535C;
+
+  /* ---- Surfaces (dark app shell + liquid-glass layers) ---- */
+  --surface-page: var(--color-dark-grey);
+  --surface-page-deep: var(--color-slate-dark);
+  --surface-glass: rgba(0, 0, 0, 0.55);
+  --surface-glass-strong: rgba(0, 0, 0, 0.65);
+  --surface-glass-active: rgba(255, 255, 255, 0.22);
+  --border-glass: rgba(255, 255, 255, 0.18);
+  --border-glass-strong: rgba(255, 255, 255, 0.22);
+  --border-glass-active: rgba(255, 255, 255, 0.30);
+
+  /* ---- Text ---- */
+  --text-on-dark: var(--color-white);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.65);
+  --text-on-dark-faint: rgba(255, 255, 255, 0.5);
+  --text-accent: var(--color-lavender);
+  --text-on-light: var(--color-dark-grey);
+
+  /* ---- Semantic accents ---- */
+  --accent-primary: var(--color-sage);      /* login / confirm / join */
+  --accent-secondary: var(--color-lavender);/* register / info */
+  --accent-danger: var(--color-wine);       /* delete / reject / suspend */
+  --accent-neutral: var(--color-grey);      /* cancel / secondary buttons */
+
+  /* ---- Card surfaces by content type ---- */
+  --card-activity-bg: var(--color-lavender);
+  --card-group-bg: var(--color-petrol);
+  --card-friend-bg: var(--color-greige);
+  --card-friend-text: var(--color-dark-grey);
+  --card-badge-bg: var(--color-wine);
+}
