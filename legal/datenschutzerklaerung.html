@@ -22,7 +22,7 @@
 <nav><a href="index.html">← Übersicht</a></nav>
 
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Stand: 9. Oktober 2026</p>
+<p class="meta">Stand: 15. Oktober 2026</p>
 <p>Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten ich im Rahmen der App „Amivi" verarbeite, zu welchen Zwecken und auf welcher Rechtsgrundlage.</p>
 
 <h2>Verantwortlicher</h2>
@@ -34,6 +34,7 @@
   <li>Bestandsdaten (Vorname, Nachname, E-Mail-Adresse, Land).</li>
   <li>Inhaltsdaten (Textnachrichten, Umfragen, Abstimmungen, Änderungsvorschläge, Mitbringlisten und Verspätungsmeldungen in Chats, Aktivitätsbeschreibungen, Feedback).</li>
   <li>Standortdaten (GPS-Koordinaten und Adressdaten von Aktivitäten; freiwillig in einem Chat geteilte Standorte).</li>
+  <li>Suchbegriffe der Ortssuche (werden zur Suche an Google übermittelt, von uns nicht gespeichert).</li>
   <li>Bilddaten (Profilbilder und in Chats gesendete Fotos, freiwillig).</li>
   <li>Audiodaten (in Chats gesendete Sprachnachrichten, freiwillig).</li>
   <li>Meta- und Verfahrensdaten (Zeitstempel, Geräte-Token).</li>
@@ -72,13 +73,13 @@
 <h2>Dienstleister und Datenübermittlung</h2>
 <ul>
   <li>Google Ireland Limited / Google LLC – Auftragsverarbeiter für Firebase (Authentifizierung, Datenbank, Speicher, Cloud Functions, Push-Benachrichtigungen). Verarbeitung gemäß Firebase Data Processing Terms.</li>
-  <li>CARTO Inc. (New York, USA) – Kartenkacheln werden von basemaps.cartocdn.com geladen; dabei wird Ihre IP-Adresse übertragen.</li>
-  <li>OpenStreetMap Foundation – bei der Ortssuche (Nominatim) wird Ihre IP-Adresse übertragen, beim Teilen eines Standorts im Chat zusätzlich dessen Koordinaten.</li>
+  <li>Google Ireland Limited / Google LLC – Google Maps und Google Places für Kartendarstellung und Ortssuche (siehe „Kartendienste und Ortssuche“).</li>
+  <li>OpenStreetMap Foundation – bei der Adressermittlung zu einem gewählten Kartenpunkt und beim Teilen eines Standorts im Chat (Nominatim) werden Ihre IP-Adresse und die Koordinaten übertragen.</li>
   <li>Andere Nutzer – Vorname, Nachname, Profilbild und Bio sind für eingeloggte Nutzer sichtbar.</li>
 </ul>
 
 <h2>Internationale Datentransfers</h2>
-<p>Datenübermittlungen an Google in die USA erfolgen auf Grundlage des EU-U.S. Data Privacy Framework (DPF, Angemessenheitsbeschluss der EU-Kommission vom 10.07.2023); Google LLC ist unter dem DPF zertifiziert. Übermittlungen an CARTO Inc. in die USA werden auf die Standardvertragsklauseln der EU-Kommission (SCCs, Art. 46 Abs. 2 lit. c DSGVO) gestützt.</p>
+<p>Datenübermittlungen an Google in die USA – für Firebase sowie für Google Maps und Google Places – erfolgen auf Grundlage des EU-U.S. Data Privacy Framework (DPF, Angemessenheitsbeschluss der EU-Kommission vom 10.07.2023); Google LLC ist unter dem DPF zertifiziert.</p>
 
 <h2>Datenspeicherung und Löschung</h2>
 <p>Daten werden gelöscht, sobald der Verarbeitungszweck entfällt oder eine Einwilligung widerrufen wird. Gesetzliche Aufbewahrungspflichten bleiben unberührt. Chat-Nachrichten werden automatisch auf maximal 100 Nachrichten pro Konversation begrenzt; ältere Nachrichten werden serverseitig gelöscht. Fotos und Sprachnachrichten werden zusammen mit ihrer Nachricht gelöscht, außerdem in Aktivitäten-Chats spätestens 30 Tage nach Ende der Aktivität (siehe „Chat-Nachrichten“).</p>
@@ -107,7 +108,7 @@
 
 <h2>Aktivitäten und Standortdaten</h2>
 <p>Aktivitäten enthalten Titel, Beschreibung, Datum, Uhrzeit und optional einen Ort. Für die Ortsauswahl kann nach ausdrücklicher Zustimmung auf den GPS-Standort zugegriffen werden. Eine erteilte Einwilligung kann jederzeit in den Geräteeinstellungen widerrufen werden. Koordinaten und Adresse der Aktivität werden gespeichert und anderen Nutzern auf einer Karte angezeigt.</p>
-<p><strong>Ihr eigener Standort.</strong> Ihre aktuelle Position wird auf Ihrem Gerät verwendet, um den Kartenausschnitt auf Ihre Umgebung auszurichten. Dafür wird sie nicht an uns übermittelt, nicht gespeichert und keinem anderen Nutzer angezeigt. Die Karte zeigt Aktivitäten an deren jeweiligem Veranstaltungsort – keine Standorte von Personen. Ein Zugriff im Hintergrund findet nicht statt.</p>
+<p><strong>Ihr eigener Standort.</strong> Ihre aktuelle Position wird auf Ihrem Gerät verwendet, um den Kartenausschnitt auf Ihre Umgebung auszurichten. Dafür wird sie nicht an uns übermittelt, nicht gespeichert und keinem anderen Nutzer angezeigt. Die Karte zeigt Aktivitäten an deren jeweiligem Veranstaltungsort – keine Standorte von Personen. Ein Zugriff im Hintergrund findet nicht statt. Beim Laden der Karte erhält Google allerdings den angezeigten Kartenausschnitt, der in der Regel Ihre Umgebung zeigt, und bei der Ortssuche den aktuellen Kartenmittelpunkt (siehe „Kartendienste und Ortssuche“).</p>
 <p><strong>Standort im Chat teilen.</strong> Nur wenn Sie im Chat ausdrücklich „Location“ wählen und den Punkt auf der Karte bestätigen, wird dieser eine Standort gesendet: Koordinaten und eine daraus ermittelte Adresse (Straße, Ort) werden als Chat-Nachricht gespeichert und den Personen angezeigt, die den Chat sehen können. Für die Adresse werden die Koordinaten an den Nominatim-Dienst der OpenStreetMap Foundation übermittelt. Es handelt sich um eine einmalige Momentaufnahme – Ihr Standort wird danach nicht weiter verfolgt oder aktualisiert. Der geteilte Standort wird wie andere Chat-Nachrichten gelöscht.</p>
 <p>Rechtsgrundlagen: Vertragserfüllung (lit. b); Einwilligung für GPS (lit. a).</p>
 
@@ -140,11 +141,14 @@
 <p>Über die Feedback-Funktion übermittelte Nachrichten werden zusammen mit Benutzer-ID, Name, E-Mail-Adresse und Plattform gespeichert.</p>
 <p>Rechtsgrundlage: Berechtigte Interessen (lit. f).</p>
 
-<h2>Kartendienste und Geocoding</h2>
-<p>Zur Kartendarstellung werden Kacheln von CARTO Inc. (basemaps.cartocdn.com) geladen – dabei wird Ihre IP-Adresse übertragen. Für die Ortssuche und die Adressermittlung beim Teilen eines Standorts wird der Nominatim-Dienst der OpenStreetMap Foundation verwendet – auch hier wird Ihre IP-Adresse übertragen, bei der Adressermittlung zusätzlich die Koordinaten.</p>
+<h2>Kartendienste und Ortssuche</h2>
+<p><strong>Karte.</strong> Karten werden mit Google Maps dargestellt, einem Dienst von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Laden der Karte werden Ihre IP-Adresse, technische Gerätedaten (z. B. Gerätemodell, Betriebssystem- und App-Version) und der angezeigte Kartenausschnitt an Google übertragen.</p>
+<p><strong>Ortssuche.</strong> Wenn Sie bei der Ortsauswahl einen Suchbegriff eingeben, werden die eingegebenen Zeichen, der aktuelle Kartenmittelpunkt (damit Orte in Ihrer Nähe zuerst erscheinen) und Ihre IP-Adresse an Google Places übermittelt. Wählen Sie einen Vorschlag aus, werden dessen Koordinaten und Adresse abgerufen und wie jeder andere Ort der Aktivität gespeichert.</p>
+<p><strong>Adressermittlung.</strong> Für die Adresse zu einem auf der Karte gewählten Punkt und beim Teilen eines Standorts im Chat wird der Nominatim-Dienst der OpenStreetMap Foundation verwendet; dabei werden Ihre IP-Adresse und die Koordinaten übertragen. Ist die Google-Suche vorübergehend nicht verfügbar, wird die Ortssuche ersatzweise ebenfalls über Nominatim ausgeführt.</p>
 <ul>
-  <li>Rechtsgrundlage: Berechtigte Interessen (lit. f).</li>
-  <li>CARTO Datenschutzerklärung: <a href="https://carto.com/privacy/">https://carto.com/privacy/</a></li>
+  <li>Rechtsgrundlage: Berechtigte Interessen (lit. f) – an einer funktionierenden Kartendarstellung und Ortssuche.</li>
+  <li>Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy</a></li>
+  <li>Zusätzliche Nutzungsbedingungen für Google Maps/Google Earth: <a href="https://www.google.com/intl/de/help/terms_maps/">https://www.google.com/help/terms_maps/</a></li>
   <li>OpenStreetMap Foundation: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
 </ul>
 
