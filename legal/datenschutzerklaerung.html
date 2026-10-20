@@ -4,23 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Datenschutzerklärung – Amivi</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { font-size: 2em; margin-bottom: 0.2em; }
-    h2 { font-size: 1.2em; margin-top: 2em; color: #444; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-    ul { padding-left: 1.4em; }
-    li { margin-bottom: 4px; }
-    p, ul { margin-bottom: 0.8em; }
-    .meta { color: #666; font-size: 0.9em; }
-    a { color: #1a73e8; }
-    nav { margin-bottom: 2em; font-size: 0.9em; }
-    nav a { margin-right: 16px; }
-  </style>
+  <meta name="theme-color" content="#424B54" />
+  <link rel="icon" href="../assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="legal.css" />
+  <script src="legal.js"></script>
 </head>
-<body>
+<body data-title-de="Datenschutzerklärung – Amivi" data-title-en="Privacy Policy – Amivi">
+<div class="wrap">
 
-<nav><a href="index.html">← Übersicht</a></nav>
+<header class="bar">
+  <a href="index.html">← <span data-l="de">Übersicht</span><span data-l="en">Overview</span></a>
+  <div class="lang" role="group" aria-label="Sprache / Language">
+    <button type="button" data-set-lang="de">DE</button>
+    <button type="button" data-set-lang="en">EN</button>
+  </div>
+</header>
 
+<main>
+
+<article data-l="de" lang="de">
 <h1>Datenschutzerklärung</h1>
 <p class="meta">Stand: 15. Oktober 2026</p>
 <p>Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten ich im Rahmen der App „Amivi" verarbeite, zu welchen Zwecken und auf welcher Rechtsgrundlage.</p>
@@ -181,6 +186,175 @@
 
 <h2>Änderung dieser Datenschutzerklärung</h2>
 <p>Ich passe diese Datenschutzerklärung bei Bedarf an. Die jeweils aktuelle Fassung gilt ab dem angegebenen Stand-Datum.</p>
+</article>
 
+<article data-l="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 15 October 2026</p>
+<div class="note"><p>This English version is a courtesy translation. Only the German
+version is legally binding.</p></div>
+<p>This Privacy Policy explains which personal data I process in connection with the app “Amivi”, for which purposes and on which legal basis.</p>
+
+<h2>Controller</h2>
+<p>Enno Mühlbauer<br>Luisenstraße 61A<br>80798 München, Germany<br>Email: <a href="mailto:support@amivi.net">support@amivi.net</a></p>
+
+<h2>Data processed and purposes</h2>
+<p><strong>Types of data</strong></p>
+<ul>
+  <li>Master data (first name, last name, email address, country).</li>
+  <li>Content data (text messages, polls, votes, change proposals, bring lists and running-late notices in chats, activity descriptions, feedback).</li>
+  <li>Location data (GPS coordinates and address data of activities; locations voluntarily shared in a chat).</li>
+  <li>Place search terms (sent to Google for the search, not stored by us).</li>
+  <li>Image data (profile pictures and photos sent in chats, voluntary).</li>
+  <li>Audio data (voice messages sent in chats, voluntary).</li>
+  <li>Meta and process data (timestamps, device tokens).</li>
+  <li>Voluntary information (short bio).</li>
+  <li>Contact data (a phone number you choose to add; during contact matching, phone numbers from the device address book – processed only locally and matched only as a hash).</li>
+</ul>
+<p><strong>Purposes of processing</strong></p>
+<ul>
+  <li>Operating and providing the app.</li>
+  <li>Registration, authentication and account management.</li>
+  <li>Managing activities, groups and friendships.</li>
+  <li>Finding friends who are already registered via the optional phone number matching.</li>
+  <li>Chat communication between users.</li>
+  <li>Sending push notifications.</li>
+  <li>Map display and place search.</li>
+  <li>Handling feedback and enquiries.</li>
+</ul>
+
+<h2>Legal bases (Art. 6 GDPR)</h2>
+<ul>
+  <li>Performance of a contract (point b) – for all core functions of the app.</li>
+  <li>Consent (point a) – for voluntary information, profile pictures, GPS location and sharing your location in a chat, access to the camera, microphone and photo library for photos and voice messages, push notifications, and the phone number and contact matching; usually given by entering the information concerned, by the deliberate act of sending, or through the system permission prompt, and revocable in the device settings.</li>
+  <li>Legitimate interests (point f) – for security measures, map services and feedback.</li>
+</ul>
+<p>The provisions of the German Federal Data Protection Act (BDSG) also apply.</p>
+
+<h2>Security measures</h2>
+<ul>
+  <li>All data transfers are encrypted via TLS/SSL.</li>
+  <li>Authentication via Firebase Authentication; passwords are hashed server-side by Google.</li>
+  <li>Firestore security rules restrict data access to the user concerned or to authorised persons.</li>
+  <li>Profile picture uploads are limited to image files of at most 5 MB.</li>
+  <li>Photos and voice messages from chats can only be uploaded by signed-in users, each only into their own storage area; uploads are limited to image files (max. 15 MB) and audio files (max. 5 MB) respectively. They are retrieved via a link that cannot be guessed and appears only in the chat message concerned.</li>
+</ul>
+
+<h2>Service providers and data transfers</h2>
+<ul>
+  <li>Google Ireland Limited / Google LLC – processor for Firebase (authentication, database, storage, Cloud Functions, push notifications). Processing in accordance with the Firebase Data Processing Terms.</li>
+  <li>Google Ireland Limited / Google LLC – Google Maps and Google Places for map display and place search (see “Map services and place search”).</li>
+  <li>OpenStreetMap Foundation – when looking up the address of a chosen map point and when sharing a location in a chat (Nominatim), your IP address and the coordinates are transmitted.</li>
+  <li>Other users – first name, last name, profile picture and bio are visible to signed-in users.</li>
+</ul>
+
+<h2>International data transfers</h2>
+<p>Data transfers to Google in the USA – for Firebase as well as for Google Maps and Google Places – are based on the EU-U.S. Data Privacy Framework (DPF, adequacy decision of the European Commission of 10 July 2023); Google LLC is certified under the DPF.</p>
+
+<h2>Data storage and deletion</h2>
+<p>Data is deleted as soon as the purpose of processing no longer applies or consent is withdrawn. Statutory retention obligations remain unaffected. Chat messages are automatically limited to a maximum of 100 messages per conversation; older messages are deleted server-side. Photos and voice messages are deleted together with their message, and in activity chats no later than 30 days after the activity has ended (see “Chat messages”).</p>
+
+<h2>Your rights (Art. 15–21 GDPR)</h2>
+<ul>
+  <li>Access to the data stored about you (Art. 15).</li>
+  <li>Rectification of inaccurate data (Art. 16).</li>
+  <li>Erasure once the purpose of processing no longer applies (Art. 17).</li>
+  <li>Restriction of processing (Art. 18).</li>
+  <li>Data portability (Art. 20).</li>
+  <li>Objection to processing based on point f (Art. 21).</li>
+  <li>Withdrawal of consent at any time with effect for the future.</li>
+  <li>Complaint to a data protection supervisory authority.</li>
+</ul>
+
+<h2>Registration and user account</h2>
+<p>Registration requires an email address, first name, last name, country and password. The country is needed to bring phone numbers into a uniform format for the optional contact matching. Passwords are hashed server-side by Firebase. The IP address and timestamp of registration and sign-in are stored to protect against misuse.</p>
+<p><strong>Age check.</strong> Use of the app requires a minimum age of 16 (Art. 8 GDPR). For this, your date of birth is asked for once during registration. The check takes place exclusively on your device; your date of birth is not transmitted to us, not stored and not shown in your profile. Only the fact that the account could be created is stored.</p>
+<p>Legal bases: performance of a contract (point b); legitimate interests (point f); legal obligation for the age check (point c).</p>
+
+<h2>User profile</h2>
+<p>In addition to the mandatory information, you can voluntarily add a profile picture and a short bio. First name, last name, profile picture and bio are visible to other signed-in users.</p>
+<p>Postcode, date of birth and gender are no longer collected. Any such information stored previously has been completely deleted from our database.</p>
+<p>Legal bases: performance of a contract (point b); consent for voluntary information (point a).</p>
+
+<h2>Activities and location data</h2>
+<p>Activities contain a title, description, date, time and optionally a place. To choose a place, the app can access your GPS location after your express consent. Consent can be withdrawn at any time in the device settings. The coordinates and address of the activity are stored and shown to other users on a map.</p>
+<p><strong>Your own location.</strong> Your current position is used on your device to centre the map on your surroundings. For this, it is not transmitted to us, not stored and not shown to any other user. The map shows activities at their respective venue – not the locations of people. There is no access in the background. When the map loads, however, Google receives the map area shown, which usually shows your surroundings, and during place search the current centre of the map (see “Map services and place search”).</p>
+<p><strong>Sharing your location in a chat.</strong> Only if you expressly choose “Location” in a chat and confirm the point on the map is this one location sent: the coordinates and an address derived from them (street, town) are stored as a chat message and shown to the people who can see the chat. To obtain the address, the coordinates are transmitted to the Nominatim service of the OpenStreetMap Foundation. This is a one-off snapshot – your location is not tracked or updated afterwards. The shared location is deleted like other chat messages.</p>
+<p>Legal bases: performance of a contract (point b); consent for GPS (point a).</p>
+
+<h2>Groups and friendships</h2>
+<p>For friend requests and group invitations, user IDs, request status and timestamps are stored.</p>
+<p>Legal basis: performance of a contract (point b).</p>
+
+<h2>Phone number and contact matching</h2>
+<p>The app lets you find friends who are already registered via their phone number. This feature is voluntary and can be skipped at any time.</p>
+<p><strong>Your own phone number.</strong> During registration or later, you can voluntarily add a phone number so that other users can find you through contact matching. For this, your phone number is brought into a uniform format (E.164) and converted into a hash using a cryptographic one-way hash function (SHA-256). Only this hash is stored, in a directory that is not publicly readable; the plain-text number is stored so that only you can access it, so that you can view and remove it again. You can delete the number in the app at any time.</p>
+<p><strong>Matching your contacts.</strong> If you expressly allow access to your address book, the phone numbers of your contacts are brought into E.164 format and likewise converted into SHA-256 hashes exclusively on your device. Only these hashes – not the plain-text numbers, names or other contact details – are transmitted to our server (Firebase Cloud Functions) and compared there with the hashes of registered users. Contacts that cannot be matched to a registered user are not stored; the hashes transmitted for matching are not stored permanently either. Your address book is never uploaded or stored in full.</p>
+<p>You can withdraw permission to access your contacts at any time in the device settings.</p>
+<p>Legal basis: consent (point a) – given by entering the phone number or through the system permission prompt for contact access.</p>
+
+<h2>Chat messages</h2>
+<p>Chat messages are stored in Firebase Firestore and are only accessible to the people who can see the chat concerned: for direct messages the two participants, for groups the group members, and for activities everyone who can see the activity. A maximum of 100 messages is stored per chat; older ones are deleted automatically.</p>
+<p><strong>Photos and voice messages.</strong> You can voluntarily send photos (from the camera or your photo library) and voice messages (up to 5 minutes) in chats. The app only accesses the camera, microphone and photo library when you trigger the respective function yourself and have agreed to the system prompt. Before uploading, photos are reduced to at most 1920 pixels on the longest side and compressed; voice messages are recorded in compressed form. The files are stored in Firebase Cloud Storage and cached on the recipients’ devices so that they do not have to be loaded repeatedly. They are deleted: together with their message (for example when it drops out of the last 100 messages), when the activity, group or direct chat is deleted, and in activity chats automatically 30 days after the activity has ended; for activities that have ended, the app shows this date.</p>
+<p><strong>Polls, proposals and lists.</strong> For polls and change proposals (new date, new place, new description), your user ID is stored with each vote; your first name is shown to the other chat participants next to your vote. For bring lists, it is stored who created or took on an item. A running-late notice is stored as a chat message and shown at the top of the chat until the time given.</p>
+<p>Legal basis: performance of a contract (point b).</p>
+
+<h2>Push notifications</h2>
+<p>For push notifications, the app stores a device-specific FCM token. You can turn notifications off at any time in the device and app settings.</p>
+<p>Legal basis: consent (point a).</p>
+
+<h2>Profile pictures</h2>
+<p>Profile pictures are uploaded voluntarily, cropped to 480×480 px, compressed in WebP format and stored in Firebase Cloud Storage. They are visible to other signed-in users.</p>
+<p>Legal basis: consent (point a).</p>
+
+<h2>In-app feedback</h2>
+<p>Messages sent via the feedback function are stored together with the user ID, name, email address and platform.</p>
+<p>Legal basis: legitimate interests (point f).</p>
+
+<h2>Map services and place search</h2>
+<p><strong>Map.</strong> Maps are displayed with Google Maps, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When the map loads, your IP address, technical device data (e.g. device model, operating system and app version) and the map area shown are transmitted to Google.</p>
+<p><strong>Place search.</strong> When you enter a search term while choosing a place, the characters entered, the current centre of the map (so that places near you appear first) and your IP address are transmitted to Google Places. If you select a suggestion, its coordinates and address are retrieved and stored like any other place of the activity.</p>
+<p><strong>Address lookup.</strong> To obtain the address of a point chosen on the map and when sharing a location in a chat, the Nominatim service of the OpenStreetMap Foundation is used; your IP address and the coordinates are transmitted in the process. If the Google search is temporarily unavailable, the place search is also carried out via Nominatim as a fallback.</p>
+<ul>
+  <li>Legal basis: legitimate interests (point f) – in a working map display and place search.</li>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google Maps/Google Earth Additional Terms of Service: <a href="https://www.google.com/help/terms_maps/">https://www.google.com/help/terms_maps/</a></li>
+  <li>OpenStreetMap Foundation: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+</ul>
+
+<h2>Use of Google Firebase</h2>
+<p>The app uses Google Firebase (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) as its technical infrastructure:</p>
+<ul>
+  <li>Firebase Authentication – user sign-in.</li>
+  <li>Cloud Firestore – storage of user data, activities, groups, friendships and messages.</li>
+  <li>Firebase Cloud Storage – profile pictures as well as photos and voice messages from chats.</li>
+  <li>Firebase Cloud Messaging (FCM) – push notifications.</li>
+  <li>Firebase Cloud Functions – server-side logic.</li>
+</ul>
+<p>Google processes data as a processor (Art. 28 GDPR). Google LLC is certified under the EU-U.S. Data Privacy Framework.</p>
+<ul>
+  <li>Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Data processing agreement: <a href="https://firebase.google.com/terms/data-processing-terms">https://firebase.google.com/terms/data-processing-terms</a></li>
+</ul>
+
+<h2>Deleting your user account</h2>
+<p>You can delete your account at any time in the app settings. This deletes your profile, profile picture, authentication account, your own activities, group memberships, friendships, direct messages and feedback metadata. Messages in group and activity chats may remain visible to the remaining participants, as they belong to the conversation. Photos and voice messages sent in direct messages are deleted along with them; in group and activity chats they are kept until the deletion dates given under “Chat messages”.</p>
+
+<h2>External links</h2>
+<p>The app lets you pass activities to a calendar or a navigation app. In doing so, the title, date, place and description are transmitted as URL parameters. This transfer only takes place at your active request and is subject to the privacy policy of the third-party provider concerned.</p>
+<p>Legal basis: consent through active user action (point a).</p>
+
+<h2>Contacting us</h2>
+<p>If you contact us by email (<a href="mailto:support@amivi.net">support@amivi.net</a>), the data you send is stored to handle your enquiry.</p>
+<p>Emails to addresses on the amivi.net domain are delivered to my mailbox at GMX (1&amp;1 Mail &amp; Media GmbH, Montabaur, Germany) via the forwarding service Cloudflare Email Routing (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Cloudflare does not store the content. Privacy policy: <a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></p>
+<p>Legal bases: performance of a contract (point b); legitimate interests (point f).</p>
+
+<h2>Changes to this Privacy Policy</h2>
+<p>I adapt this Privacy Policy when necessary. The current version applies from the date shown.</p>
+</article>
+
+</main>
+
+</div>
 </body>
 </html>

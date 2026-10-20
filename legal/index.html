@@ -3,45 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rechtliche Hinweise – Amivi</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { font-size: 2em; margin-bottom: 0.2em; }
-    p { color: #555; margin-bottom: 2em; }
-    .cards { display: flex; flex-direction: column; gap: 12px; }
-    .card { display: block; padding: 20px 24px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none; color: #222; transition: border-color 0.15s; }
-    .card:hover { border-color: #1a73e8; }
-    .card h2 { margin: 0 0 4px; font-size: 1.1em; }
-    .card span { font-size: 0.85em; color: #666; }
-  </style>
+  <title>Rechtliches – Amivi</title>
+  <meta name="theme-color" content="#424B54" />
+  <link rel="icon" href="../assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="legal.css" />
+  <script src="legal.js"></script>
 </head>
-<body>
+<body data-title-de="Rechtliches – Amivi" data-title-en="Legal – Amivi">
+<div class="wrap">
 
-<h1>Amivi – Rechtliche Hinweise</h1>
-<p>Alle rechtlichen Dokumente zur mobilen App „Amivi".</p>
+<header class="bar">
+  <a class="brand" href="../">AMIVI</a>
+  <div class="lang" role="group" aria-label="Sprache / Language">
+    <button type="button" data-set-lang="de">DE</button>
+    <button type="button" data-set-lang="en">EN</button>
+  </div>
+</header>
 
-<div class="cards">
-  <a class="card" href="datenschutzerklaerung.html">
-    <h2>Datenschutzerklärung</h2>
-    <span>Privacy Policy · Stand: 15. Oktober 2026</span>
-  </a>
-  <a class="card" href="agb.html">
-    <h2>Nutzungsbedingungen (AGB)</h2>
-    <span>Terms of Service · Stand: 15. Oktober 2026</span>
-  </a>
-  <a class="card" href="impressum.html">
-    <h2>Impressum</h2>
-    <span>Legal Notice · Anbieterangaben</span>
-  </a>
-  <a class="card" href="delete-account.html">
-    <h2>Konto löschen</h2>
-    <span>Account Deletion · Wege, Umfang und Aufbewahrung (englisch)</span>
-  </a>
-  <a class="card" href="kinderschutz.html">
-    <h2>Kinderschutz</h2>
-    <span>Child Safety Standards · Stand: 20. Oktober 2026 (englisch)</span>
-  </a>
+<main>
+  <h1><span data-l="de">Rechtliches</span><span data-l="en">Legal</span></h1>
+  <p class="meta">
+    <span data-l="de">Alle rechtlichen Dokumente zur App „Amivi: Friends &amp; Plans“.</span>
+    <span data-l="en">All legal documents for the app “Amivi: Friends &amp; Plans”.</span>
+  </p>
+
+  <ul class="docs">
+    <li>
+      <a href="datenschutzerklaerung.html">
+        <span class="doc-title"><span data-l="de">Datenschutzerklärung</span><span data-l="en">Privacy Policy</span></span>
+        <span class="doc-sub"><span data-l="de">Stand: 15. Oktober 2026</span><span data-l="en">Last updated: 15 October 2026</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="agb.html">
+        <span class="doc-title"><span data-l="de">Nutzungsbedingungen</span><span data-l="en">Terms of Service</span></span>
+        <span class="doc-sub"><span data-l="de">Stand: 15. Oktober 2026</span><span data-l="en">Last updated: 15 October 2026</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="kinderschutz.html">
+        <span class="doc-title"><span data-l="de">Kinderschutz</span><span data-l="en">Child Safety Standards</span></span>
+        <span class="doc-sub"><span data-l="de">Stand: 20. Oktober 2026</span><span data-l="en">Last updated: 20 October 2026</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="delete-account.html">
+        <span class="doc-title"><span data-l="de">Konto löschen</span><span data-l="en">Delete Account</span></span>
+        <span class="doc-sub"><span data-l="de">Wege, Umfang und Aufbewahrung</span><span data-l="en">How, what and what is kept</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="impressum.html">
+        <span class="doc-title"><span data-l="de">Impressum</span><span data-l="en">Legal Notice</span></span>
+        <span class="doc-sub"><span data-l="de">Anbieterangaben</span><span data-l="en">Provider details</span></span>
+      </a>
+    </li>
+  </ul>
+</main>
+
 </div>
-
 </body>
 </html>

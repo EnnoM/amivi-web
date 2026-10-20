@@ -1,0 +1,191 @@
+/* Amivi — legal pages
+   Same look as www.amivi.net and the app: dark grey background (#424B54),
+   white Barlow type, no cards or boxes — the text is the page. */
+
+:root {
+  --bg: #424B54;
+  --heading: #fff;
+  --body: rgba(255, 255, 255, 0.86);
+  --muted: rgba(255, 255, 255, 0.58);
+  --line: rgba(255, 255, 255, 0.12);
+  --link: #cfd0e4;
+  --accent: #8E8FAF;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font-family: 'Barlow', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(142, 143, 175, 0.55); color: #fff; }
+
+/* Only the chosen language is shown. Without JavaScript the page stays
+   German (the original), and the switch is hidden. */
+html[data-lang="en"] [data-l="de"],
+html:not([data-lang="en"]) [data-l="en"] { display: none !important; }
+html:not([data-lang]) .lang { display: none; }
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 28px 20px 96px;
+}
+
+/* ── Top bar ─────────────────────────────────────────────────────────────── */
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 56px;
+  font-size: 15px;
+}
+
+.bar a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.bar a:hover { color: #fff; }
+
+.bar .brand {
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+.lang {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.lang button {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 6px 9px;
+  cursor: pointer;
+}
+
+.lang button:hover { color: #fff; }
+
+.lang button[aria-pressed="true"] {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lang button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── Text ────────────────────────────────────────────────────────────────── */
+
+h1 {
+  margin: 0 0 10px;
+  color: var(--heading);
+  font-size: clamp(32px, 7vw, 44px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+h2 {
+  margin: 44px 0 10px;
+  color: var(--heading);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 1.2em; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--muted); }
+
+strong { color: var(--heading); font-weight: 600; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: rgba(207, 208, 228, 0.4);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+a:hover { color: #fff; text-decoration-color: #fff; }
+
+.meta {
+  margin: 0 0 40px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.note {
+  margin: 20px 0;
+  padding: 2px 0 2px 16px;
+  border-left: 2px solid var(--accent);
+}
+
+.note p:last-child { margin-bottom: 0; }
+
+/* ── Overview list (index.html) ──────────────────────────────────────────── */
+
+.docs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.docs li {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.docs a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 20px 0;
+  color: var(--heading);
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.docs a:hover .doc-title { text-decoration: underline; text-underline-offset: 4px; }
+
+.docs .doc-sub {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 520px) {
+  .docs a { flex-direction: column; align-items: flex-start; }
+}

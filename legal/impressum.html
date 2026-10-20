@@ -4,20 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impressum – Amivi</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { font-size: 2em; margin-bottom: 0.2em; }
-    h2 { font-size: 1.2em; margin-top: 2em; color: #444; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-    p { margin-bottom: 0.8em; }
-    a { color: #1a73e8; }
-    nav { margin-bottom: 2em; font-size: 0.9em; }
-    nav a { margin-right: 16px; }
-  </style>
+  <meta name="theme-color" content="#424B54" />
+  <link rel="icon" href="../assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="legal.css" />
+  <script src="legal.js"></script>
 </head>
-<body>
+<body data-title-de="Impressum – Amivi" data-title-en="Legal Notice – Amivi">
+<div class="wrap">
 
-<nav><a href="index.html">← Übersicht</a></nav>
+<header class="bar">
+  <a href="index.html">← <span data-l="de">Übersicht</span><span data-l="en">Overview</span></a>
+  <div class="lang" role="group" aria-label="Sprache / Language">
+    <button type="button" data-set-lang="de">DE</button>
+    <button type="button" data-set-lang="en">EN</button>
+  </div>
+</header>
 
+<main>
+
+<article data-l="de" lang="de">
 <h1>Impressum</h1>
 
 <h2>Angaben</h2>
@@ -28,6 +36,23 @@
 
 <h2>Hinweis</h2>
 <p>Diese App wird privat und ohne Gewinnerzielungsabsicht betrieben.</p>
+</article>
 
+<article data-l="en" lang="en">
+<h1>Legal Notice</h1>
+
+<h2>Provider</h2>
+<p>Enno Mühlbauer<br>Luisenstraße 61A<br>80798 München<br>Germany</p>
+
+<h2>Contact</h2>
+<p>Email: <a href="mailto:support@amivi.net">support@amivi.net</a></p>
+
+<h2>Note</h2>
+<p>This app is run privately and on a non-profit basis.</p>
+</article>
+
+</main>
+
+</div>
 </body>
 </html>
